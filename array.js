@@ -50,5 +50,32 @@ fruits.shift();
 console.log(fruits);
 
 // shift,unshif는 pop과 push보다 많이 느리다.
+// splice: remove an item by index position
+fruits.push('🍍','🍋','🍉');
+console.log(fruits);
+fruits.splice(1,1);
+console.log(fruits);
+fruits.splice(1,1,'🍇','🥥');
+console.log(fruits);
 
-// next
+// combine two arrays
+const fruits2 = ['🫐','🍒'];
+const newFruits = fruits.concat(fruits2);
+console.log(newFruits);
+
+// 4.Searching
+// find the index
+console.clear();
+console.log(fruits);
+console.log(fruits.indexOf('🍉')); //배열에서 몇번째에 있는지
+
+// includes
+console.log(fruits.includes('🐳')); //배열 안에 정의한것이 들어있는지 없는지
+
+// lastIndexOf
+console.clear();
+fruits.push('🍎');
+console.log(fruits);
+console.log(fruits.indexOf('🍎'));
+console.log(fruits.lastIndexOf('🍎'));
+
